@@ -1,0 +1,118 @@
+
+Denise@Denise MINGW64 ~/primerExamen
+$ mkdir Ingles Frances Espaniol Portugues Aleman
+
+Denise@Denise MINGW64 ~/primerExamen
+$ touch Inglaterra Espania Portugal Alemania Francia
+
+Denise@Denise MINGW64 ~/primerExamen
+$ mv Inglaterra ~/primerExamen/Ingles 
+
+Denise@Denise MINGW64 ~/primerExamen
+$ mv Espania ~/primerExamen/Espaniol
+
+Denise@Denise MINGW64 ~/primerExamen
+$ mv Portugal ~/primerExamen/Portugues
+
+Denise@Denise MINGW64 ~/primerExamen
+$ mv Alemania ~/primerExamen/Aleman
+
+Denise@Denise MINGW64 ~/primerExamen
+$ mv Francia ~/primerExamen/Frances
+
+Denise@Denise MINGW64 ~/primerExamen
+$ rmdir Espaniol
+rmdir: failed to remove 'Espaniol': Directory not empty
+
+Denise@Denise MINGW64 ~/primerExamen
+$ rmdir Espaniol/
+rmdir: failed to remove 'Espaniol/': Directory not empty
+
+Denise@Denise MINGW64 ~/primerExamen
+$ rmdir ~/primerExamen/Espaniol
+rmdir: failed to remove '/c/Users/Denise/primerExamen/Espaniol': Directory not emptyrectory not empty
+
+Denise@Denise MINGW64 ~/primerExamen
+$ rm -r Espaniol
+
+Denise@Denise MINGW64 ~/primerExamen
+$ pwd
+/c/Users/Denise/primerExamen
+
+Denise@Denise MINGW64 ~/primerExamen
+$ git init
+Initialized empty Git repository in C:/Users/Denise/primerExamen/.git/
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git branch desarrollo
+fatal: not a valid object name: 'main'
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git branch "desarrollo"
+fatal: not a valid object name: 'main'
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git checkout desarrollo
+error: pathspec 'desarrollo' did not match any file(s) known to git
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git checkout  "desarrollo"
+error: pathspec 'desarrollo' did not match any file(s) known to git
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git branch "desarrollo"
+fatal: not a valid object name: 'main'
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git add .
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'origin'
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git branch desarrollo
+fatal: not a valid object name: 'main'
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git remote add origin https://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1@github.com/denvidal/primerExamen.git
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git add .
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git commit -m "examen"
+[main (root-commit) 5e17018] examen
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Aleman/Alemania
+ create mode 100644 Frances/Francia
+ create mode 100644 Ingles/Inglaterra
+ create mode 100644 Portugues/Portugal
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git push origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (7/7), 489 bytes | 122.00 KiB/s, done.       
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/denvidal/primerExamen.git
+ * [new branch]      main -> main
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git branch desarrollo
+
+Denise@Denise MINGW64 ~/primerExamen (main)
+$ git checkout desarrollo
+Switched to branch 'desarrollo'
+
+Denise@Denise MINGW64 ~/primerExamen (desarrollo)
+$ git commit -m "nueva rama"
+On branch desarrollo
+nothing to commit, working tree clean
+
+Denise@Denise MINGW64 ~/primerExamen (desarrollo)
+$
+
